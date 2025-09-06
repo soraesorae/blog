@@ -1,0 +1,115 @@
+baseURL = "https://example.org"
+title = "so"
+theme = [ "PaperMod" ]
+enableInlineShortcodes = true
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = true
+pygmentsUseClasses = true
+mainsections = [ "posts" ]
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+[pagination]
+disableAliases = false
+pagerSize = 5
+
+[languages.en]
+languageName = "en"
+weight = 10
+
+[languages.ko]
+languageName = "ko"
+weight = 20
+
+  [languages.ko.params]
+  languageAltTitle = "Korean"
+
+
+[[menu.main]]
+identifier = "categories"
+name = "Categories"
+url = "categories/"
+weight = 10
+
+# [[menu.main]]
+# identifier = "archives"
+# name = "Archives"
+# url = "archives/"
+# weight = 20
+
+[[menu.main]]
+identifier = "search"
+name = "Search"
+url = "search/"
+weight = 30
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "tags/"
+weight = 40
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "about/"
+weight = 50
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+
+[params]
+environment = "production"
+defaultTheme = "auto"
+ShowShareButtons = false
+ShowReadingTime = true
+displayFullLangName = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowRssButtonInSectionTermList = true
+# ShowAllPagesInArchive = true
+ShowPageNums = true
+ShowToc = true
+disableSpecial1stPost = true
+
+  [params.assets]
+  disableHLJS = true
+
+  [params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1_000
+  threshold = 0.4
+  minMatchCharLength = 0
+  limit = 10
+  keys = [ "title", "permalink", "summary", "content" ]
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+noClasses = false
+
+[services.instagram]
+disableInlineCSS = true
+
+[services.x]
+disableInlineCSS = true
+
+[privacy]
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.youtube]
+    disable = true
+  [privacy.instagram] 
+    disable = true
+  [privacy.x]
+    disable = true
+
