@@ -113,3 +113,6 @@ disableInlineCSS = true
   [privacy.x]
     disable = true
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
