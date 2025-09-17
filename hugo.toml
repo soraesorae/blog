@@ -18,16 +18,16 @@ minifyOutput = true
 disableAliases = false
 pagerSize = 5
 
-[languages.en]
-languageName = "en"
-weight = 10
+# [languages.ko]
+# languageName = "ko"
+# weight = 10
+#
+# [languages.en]
+# languageName = "en"
+# weight = 20
 
-[languages.ko]
-languageName = "ko"
-weight = 20
-
-  [languages.ko.params]
-  languageAltTitle = "Korean"
+  # [languages.ko.params]
+  # languageAltTitle = "Korean"
 
 
 [[menu.main]]
