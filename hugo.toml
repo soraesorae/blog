@@ -91,8 +91,17 @@ disableSpecial1stPost = true
   limit = 10
   keys = [ "title", "permalink", "summary", "content" ]
 
-[markup.goldmark.renderer]
-unsafe = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['$$', '$$']]
+          inline = [['$', '$']]
 
 [markup.highlight]
 noClasses = false
